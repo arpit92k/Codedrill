@@ -6,12 +6,12 @@
  */
 
 package com.ideone.api._1.service;
-
+@SuppressWarnings({ "rawtypes", "unused" })
 public class Ideone_Service_v1BindingStub extends org.apache.axis.client.Stub implements com.ideone.api._1.service.Ideone_Service_v1Port {
     private java.util.Vector cachedSerClasses = new java.util.Vector();
     private java.util.Vector cachedSerQNames = new java.util.Vector();
     private java.util.Vector cachedSerFactories = new java.util.Vector();
-    private java.util.Vector cachedDeserFactories = new java.util.Vector();
+	private java.util.Vector cachedDeserFactories = new java.util.Vector();
 
     static org.apache.axis.description.OperationDesc [] _operations;
 

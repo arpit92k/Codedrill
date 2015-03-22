@@ -7,6 +7,7 @@
 
 package com.ideone.api._1.service;
 
+@SuppressWarnings({"serial","rawtypes"})
 public class Ideone_Service_v1ServiceLocator extends org.apache.axis.client.Service implements com.ideone.api._1.service.Ideone_Service_v1Service {
 
     public Ideone_Service_v1ServiceLocator() {
@@ -89,7 +90,8 @@ public class Ideone_Service_v1ServiceLocator extends org.apache.axis.client.Serv
      * If this service has no port for the given interface,
      * then ServiceException is thrown.
      */
-    public java.rmi.Remote getPort(javax.xml.namespace.QName portName, Class serviceEndpointInterface) throws javax.xml.rpc.ServiceException {
+    
+	public java.rmi.Remote getPort(javax.xml.namespace.QName portName, Class serviceEndpointInterface) throws javax.xml.rpc.ServiceException {
         if (portName == null) {
             return getPort(serviceEndpointInterface);
         }
@@ -110,7 +112,8 @@ public class Ideone_Service_v1ServiceLocator extends org.apache.axis.client.Serv
 
     private java.util.HashSet ports = null;
 
-    public java.util.Iterator getPorts() {
+    @SuppressWarnings("unchecked")
+	public java.util.Iterator getPorts() {
         if (ports == null) {
             ports = new java.util.HashSet();
             ports.add(new javax.xml.namespace.QName("http://ideone.com/api/1/service", "Ideone_Service_v1Port"));
