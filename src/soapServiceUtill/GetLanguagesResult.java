@@ -9,6 +9,8 @@ public class GetLanguagesResult {
 	public GetLanguagesResult(Object [] res){
 		HashMap<String,Object> result=(HashMap<String,Object>)res[0];
 		error=(String)result.get("error");
-		langs=(HashMap<Integer,String>)result.get("languages");
+		if(error.equals("OK")){
+			langs=(HashMap<Integer,String>)result.get("languages");
+		}
 	}
 }

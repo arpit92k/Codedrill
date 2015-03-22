@@ -9,6 +9,8 @@ public class CreateSubmissionResult {
 	public CreateSubmissionResult(Object[] res){
 		HashMap<String,Object> result=(HashMap<String,Object>)res[0];
 		error=(String)result.get("error");
-		link=(String)result.get("link");
+		if(error.equals("OK")){
+			link=(String)result.get("link");
+		}
 	}
 }
