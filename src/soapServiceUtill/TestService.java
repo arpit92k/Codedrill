@@ -9,13 +9,13 @@ import java.util.Scanner;
 import com.ideone.api._1.service.Ideone_Service_v1PortProxy;
 
 public class TestService {
-
-	public static void main(String[] args) throws RemoteException, FileNotFoundException, InterruptedException {
+	//removing this test main to run final code 
+	public static void main_renameToTest(String[] args) throws RemoteException, FileNotFoundException, InterruptedException {
 		// TODO Auto-generated method stub
-		String user="";
-		String pass="";
+		String user="codedrill";
+		String pass="megacode";
 		Ideone_Service_v1PortProxy proxy=new Ideone_Service_v1PortProxy();
-		/*TestFunctionResult result=new TestFunctionResult(proxy.testFunction(user, pass));
+		TestFunctionResult result=new TestFunctionResult(proxy.testFunction(user, pass));
 		System.out.println("Test Function : ");
 		System.out.println(result.error);
 		if(result.error.equals("OK")){
@@ -31,7 +31,7 @@ public class TestService {
 			for(Entry<Integer, String> en:result1.langs.entrySet()){
 				System.out.println(en.getKey()+" : "+en.getValue());
 			}
-		}*/
+		}
 		Scanner scanner;
 		String sourceCode = (scanner =new Scanner(new File("javaCode.txt"))).useDelimiter("\\Z").next();
 		//System.out.println(sourceCode);
