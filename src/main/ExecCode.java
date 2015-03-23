@@ -7,8 +7,8 @@ import soapServiceUtill.*;
 import com.ideone.api._1.service.Ideone_Service_v1PortProxy;
 
 public class ExecCode {
-	private final String user="codedrill";
-	private final String pass="megacode";
+	private final String user="";
+	private final String pass="";
 	private boolean run;
 	private boolean _private;
 	private String sourceCode;
