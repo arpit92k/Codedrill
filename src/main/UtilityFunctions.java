@@ -19,6 +19,8 @@ public class UtilityFunctions {
 			return 3;
 		if(ext.equals("py"))
 			return 4;
+		if(ext.equals("php"))
+			return 29;
 		throw new LanguageNotSupportedException(ext);
 	}
 	/*public static String getLangName(int langCode) throws LanguageNotSupportedException{
