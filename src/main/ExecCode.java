@@ -29,7 +29,7 @@ public class ExecCode {
 		}
 		catch (Exception e){
 			System.err.println(e.getMessage());
-			System.err.println(e.getStackTrace());
+			//System.err.println(e.getStackTrace());
 		}
 	}
 	public ExecCode(String file,boolean outputOnly){
@@ -46,7 +46,7 @@ public class ExecCode {
 		}
 		catch (Exception e){
 			System.err.println(e.getMessage());
-			System.err.println(e.getStackTrace());
+			//System.err.println(e.getStackTrace());
 		}
 	}
 	public ExecCode(String file){
@@ -60,7 +60,7 @@ public class ExecCode {
 		}
 		catch (Exception e){
 			System.err.println(e.getMessage());
-			System.err.println(e.getStackTrace());
+			//System.err.println(e.getStackTrace());
 		}
 	}
 	private void runVerbose() throws RemoteException, InterruptedException {
