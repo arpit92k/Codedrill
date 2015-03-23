@@ -11,13 +11,21 @@ public class UtilityFunctions {
 		String ext=fileName.substring(fileName.lastIndexOf('.')+1);
 		if(ext.equals("java"))
 			return 10;
+		if(ext.equals("cpp"))
+			return 1;
+		if(ext.equals("c"))
+			return 11;
+		if(ext.equals("pl"))
+			return 3;
+		if(ext.equals("py"))
+			return 4;
 		throw new LanguageNotSupportedException(ext);
 	}
-	public static String getLangName(int langCode) throws LanguageNotSupportedException{
+	/*public static String getLangName(int langCode) throws LanguageNotSupportedException{
 		if(langCode==10)
 			return "Java";
 		throw new LanguageNotSupportedException("Invalid language code : "+langCode);
-	}
+	}*/
 	public static String readFile(String fileName) throws FileNotFoundException{
 		Scanner scanner;
 		String content = (scanner =new Scanner(new File(fileName))).useDelimiter("\\Z").next();

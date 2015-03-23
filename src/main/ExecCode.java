@@ -89,7 +89,7 @@ public class ExecCode {
 		System.out.println("Date : "+result.date);
 		System.out.println("Memory : "+result.memory);
 		System.out.println("Signal : "+result.singnal);
-		System.out.println("Sandard Error : "+result.error);
+		System.out.println("Sandard Error : "+result.stderr);
 		System.out.println("Compile info : "+result.cmpinfo);
 		System.out.println("Output : \n"+result.output);
 		if(result.result!=15)
